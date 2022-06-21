@@ -12,7 +12,6 @@ class PlayerMovement : Component() {
 
     private val SPEED = 13
 
-
     override fun init(game: Game?) {
         transform = parent.getComponent(TransformComponent::class.java)
     }

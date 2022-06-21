@@ -26,7 +26,7 @@ class MainScene : Scene() {
         Log.info(javaClass, "Initialize main scene")
         pos = game!!.screenCenter
 
-        player = GameObjectBuilder()
+        player = GameObjectBuilder(this, "Player")
             .withTransform(game.screenCenter, Vector2f(20.0f, 20.0f))
             .withShape(Shapes.CIRCLE, Colors.RED)
             .withComponents(PlayerMovement(), ColorChanger())
@@ -36,16 +36,7 @@ class MainScene : Scene() {
     }
 
     override fun update(game: Game?, fps: Float) {
-//        val kb: Keyboard = Input.getKeyboard()
-//        val mouse: Mouse = Input.getMouse()
-//
-//        if (kb.isKeyDown(Keys.W)) pos.y -= SPEED
-//        if (kb.isKeyDown(Keys.A)) pos.x -= SPEED
-//        if (kb.isKeyDown(Keys.S)) pos.y += SPEED
-//        if (kb.isKeyDown(Keys.D)) pos.x += SPEED
-//        if (mouse.isMouseDown(Keys.MOUSE_MIDDLE)) redOrBlue = !redOrBlue
-//
-//        Renderer.drawCircle(getColor(), pos, 20.0f)
+
     }
 
     override fun dispose(game: Game?) {
