@@ -13,7 +13,9 @@ fun main(args: Array<String>) {
     val game = Game(
         Vector2f(700.0f, 700.0f),
         "Hello World",
-        scenes
+        scenes,
+        false,
+        60.0f
     )
 
     game.start("Main")
